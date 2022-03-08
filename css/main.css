@@ -1,0 +1,266 @@
+/* === BASE CSS === */
+*{
+  font-family: 'Montserrat' , sans-serif;
+}
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === NAVBAR CSS === */
+
+.navbar{
+  background-color: black;
+}
+
+.navbar .navbar-brand{
+  color: white;
+  font-size: 34px;
+}
+
+.navbar .navbar-nav a{
+  margin-left: 15px;
+  font-size: 28px;
+}
+
+.navbar .dropdown-menu{
+  padding: 20px;
+}
+
+.notification {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -12px;
+  right: -4px;
+  padding: 5px 8px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+.viewCart{
+  margin-top: 20px;
+}
+
+/* === CAROUSEL CSS === */
+.carousel .carousel-inner img{
+  height: 400px;
+}
+
+.carousel .carousel-control-prev a{
+  text-decoration: none;
+}
+
+.carousel .carousel-control-prev i{
+  left: -110px;
+  border-bottom: 0;
+  margin-left: 10px;
+  font-size: 30px;
+  color: black;
+}
+  
+
+.carousel .carousel-control-next i{
+  right: -110px;
+  border-bottom: 0;
+  margin-right: 10px;
+  font-size: 30px;
+  color: black;
+}
+
+/* === CATEGORIES === */
+.description{
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.description h1{
+  font-weight: 800;
+}
+
+.card{
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.card-title{
+  font-weight: 800;
+}
+
+.description .card img{
+  height: 280px;
+}
+
+.description .card a{
+  margin-top: 10px;
+}
+
+.description .card a:focus{
+  background-color: black;
+  color: white;
+}
+
+/* === SELLER DESCRIPTION === */
+.seller-info{
+  padding: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  width: 90%;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.seller-info table{
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.seller-info i{
+  font-size: 24px;
+}
+
+.seller-info table td{
+  height: 50px;
+  vertical-align: bottom;
+  width: 34%;
+  padding-top: 20px;
+}
+
+
+
+/* === FOOTER CSS === */
+footer{
+  margin-top: 100px;
+  padding: 20px;
+  background-color: black; 
+  color: white;
+  text-align: center;
+}
+
+footer i{
+  font-size: 24px;
+  padding: 10px;
+}
+
+footer .social{
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  
+}
+
+footer .social:focus{
+  background-color: teal;
+  border-radius: 2px;
+  color: white;
+}
+
+/* === ABOUT US CSS === */
+.about-us{
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.about-us img{
+  width: 100%;
+  height: 200px;
+}
+
+.about-us h1,h3{
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/* === MEDIA QUERIES === */
+
+@media screen and (min-width:320px){
+  .navbar .navbar-brand{
+    font-size: 18px;
+  }
+
+  .navbar .navbar-nav a{
+    font-size: 16px;
+  }
+
+}
+
+
+@media screen and (min-width: 768px){
+  .about-us{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .about-us img{
+    height: 400px;
+  }
+  
+  .about-us h1,h3{
+    padding: 20px 40px 20px 40px;
+  }
+
+  .navbar .navbar-brand{
+    font-size: 38px;
+  }
+
+  .navbar .navbar-nav a{
+    font-size: 28px;
+  }
+
+  .navbar .dropdown-menu h4{
+    font-size: 32px;
+    }
+
+  .carousel .carousel-inner img{
+    height: 600px;
+  }
+
+  .description .card{
+    display: inline-block;
+    margin: 5px;
+  }
+
+}
+
+  @media screen and (min-width: 1024px){
+    .about-us{
+      width: 80%;
+    }
+    
+    .about-us img{
+      width: 800px;
+      height: 400px;
+    }
+    
+    .about-us h1,h3{
+      padding: 20px 40px 20px 40px;
+    }
+
+    .carousel{
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .carousel .carousel-inner img{
+      height: 500px;
+    }
+
+    .description .card{
+      display: inline-block;
+      margin: 20px;
+    }
+
+    
+  }
